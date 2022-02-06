@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+    {% if title %}
+        <title>KL ERP - {{ title }}</title>
+    {% else %}
+        <title>KL ERP</title>
+    {% endif %}
+</head>
+<body>
+	<img src="static/logo.jfif" alt="KLU logo" width="70" height="35">
+	<center><h1>WELCOME to KL ERP</h1>
+</center>
+
+{% block content %}{% endblock %}
+
+<center><h5>CopyRights KL'CSEH-2022'</h5></center>
+
+</body>
+</html>
